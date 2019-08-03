@@ -65,39 +65,187 @@ CMAKE_SOURCE_DIR = /Users/wangqing/Desktop/C:C++/Demo
 CMAKE_BINARY_DIR = /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Demo.dir
+# Target rules for target CMakeFiles/encry.dir
 
 # All Build rule for target.
-CMakeFiles/Demo.dir/all:
-	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/depend
-	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Demo"
-.PHONY : CMakeFiles/Demo.dir/all
+CMakeFiles/encry.dir/all:
+	$(MAKE) -f CMakeFiles/encry.dir/build.make CMakeFiles/encry.dir/depend
+	$(MAKE) -f CMakeFiles/encry.dir/build.make CMakeFiles/encry.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target encry"
+.PHONY : CMakeFiles/encry.dir/all
 
 # Include target in all.
-all: CMakeFiles/Demo.dir/all
+all: CMakeFiles/encry.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Demo.dir/rule: cmake_check_build_system
+CMakeFiles/encry.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Demo.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/encry.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Demo.dir/rule
+.PHONY : CMakeFiles/encry.dir/rule
 
 # Convenience name for target.
-Demo: CMakeFiles/Demo.dir/rule
+encry: CMakeFiles/encry.dir/rule
 
-.PHONY : Demo
-
-# clean rule for target.
-CMakeFiles/Demo.dir/clean:
-	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/clean
-.PHONY : CMakeFiles/Demo.dir/clean
+.PHONY : encry
 
 # clean rule for target.
-clean: CMakeFiles/Demo.dir/clean
+CMakeFiles/encry.dir/clean:
+	$(MAKE) -f CMakeFiles/encry.dir/build.make CMakeFiles/encry.dir/clean
+.PHONY : CMakeFiles/encry.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/encry.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/leakmem.dir
+
+# All Build rule for target.
+CMakeFiles/leakmem.dir/all:
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/depend
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=7,8,9 "Built target leakmem"
+.PHONY : CMakeFiles/leakmem.dir/all
+
+# Include target in all.
+all: CMakeFiles/leakmem.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/leakmem.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/leakmem.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/leakmem.dir/rule
+
+# Convenience name for target.
+leakmem: CMakeFiles/leakmem.dir/rule
+
+.PHONY : leakmem
+
+# clean rule for target.
+CMakeFiles/leakmem.dir/clean:
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/clean
+.PHONY : CMakeFiles/leakmem.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/leakmem.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Include target in all.
+all: CMakeFiles/main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+
+.PHONY : main
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/dynamicalloc.dir
+
+# All Build rule for target.
+CMakeFiles/dynamicalloc.dir/all:
+	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/depend
+	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target dynamicalloc"
+.PHONY : CMakeFiles/dynamicalloc.dir/all
+
+# Include target in all.
+all: CMakeFiles/dynamicalloc.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dynamicalloc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dynamicalloc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/dynamicalloc.dir/rule
+
+# Convenience name for target.
+dynamicalloc: CMakeFiles/dynamicalloc.dir/rule
+
+.PHONY : dynamicalloc
+
+# clean rule for target.
+CMakeFiles/dynamicalloc.dir/clean:
+	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/clean
+.PHONY : CMakeFiles/dynamicalloc.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/dynamicalloc.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/2ndPoint.dir
+
+# All Build rule for target.
+CMakeFiles/2ndPoint.dir/all:
+	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/depend
+	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 2ndPoint"
+.PHONY : CMakeFiles/2ndPoint.dir/all
+
+# Include target in all.
+all: CMakeFiles/2ndPoint.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/2ndPoint.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/2ndPoint.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/2ndPoint.dir/rule
+
+# Convenience name for target.
+2ndPoint: CMakeFiles/2ndPoint.dir/rule
+
+.PHONY : 2ndPoint
+
+# clean rule for target.
+CMakeFiles/2ndPoint.dir/clean:
+	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/clean
+.PHONY : CMakeFiles/2ndPoint.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/2ndPoint.dir/clean
 
 .PHONY : clean
 

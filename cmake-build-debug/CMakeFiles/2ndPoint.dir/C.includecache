@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/C:C++/Demo/二级指针函数输出.c
+stdlib.h
+/Users/wangqing/Desktop/C:C++/Demo/stdlib.h
+stdio.h
+/Users/wangqing/Desktop/C:C++/Demo/stdio.h
+string.h
+/Users/wangqing/Desktop/C:C++/Demo/string.h
+stdbool.h
+/Users/wangqing/Desktop/C:C++/Demo/stdbool.h
+

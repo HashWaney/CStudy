@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/C:C++/Demo/动态内存分配.c
+printf.h
+/Users/wangqing/Desktop/C:C++/Demo/printf.h
+stdlib.h
+/Users/wangqing/Desktop/C:C++/Demo/stdlib.h
+

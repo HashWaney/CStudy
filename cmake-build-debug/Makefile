@@ -111,17 +111,150 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Demo
+# Target rules for targets named encry
 
 # Build rule for target.
-Demo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Demo
-.PHONY : Demo
+encry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encry
+.PHONY : encry
 
 # fast build rule for target.
-Demo/fast:
-	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/build
-.PHONY : Demo/fast
+encry/fast:
+	$(MAKE) -f CMakeFiles/encry.dir/build.make CMakeFiles/encry.dir/build
+.PHONY : encry/fast
+
+#=============================================================================
+# Target rules for targets named leakmem
+
+# Build rule for target.
+leakmem: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leakmem
+.PHONY : leakmem
+
+# fast build rule for target.
+leakmem/fast:
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/build
+.PHONY : leakmem/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named dynamicalloc
+
+# Build rule for target.
+dynamicalloc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamicalloc
+.PHONY : dynamicalloc
+
+# fast build rule for target.
+dynamicalloc/fast:
+	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/build
+.PHONY : dynamicalloc/fast
+
+#=============================================================================
+# Target rules for targets named 2ndPoint
+
+# Build rule for target.
+2ndPoint: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2ndPoint
+.PHONY : 2ndPoint
+
+# fast build rule for target.
+2ndPoint/fast:
+	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/build
+.PHONY : 2ndPoint/fast
+
+encryption/encrypt.o: encryption/encrypt.c.o
+
+.PHONY : encryption/encrypt.o
+
+# target to build an object file
+encryption/encrypt.c.o:
+	$(MAKE) -f CMakeFiles/encry.dir/build.make CMakeFiles/encry.dir/encryption/encrypt.c.o
+.PHONY : encryption/encrypt.c.o
+
+encryption/encrypt.i: encryption/encrypt.c.i
+
+.PHONY : encryption/encrypt.i
+
+# target to preprocess a source file
+encryption/encrypt.c.i:
+	$(MAKE) -f CMakeFiles/encry.dir/build.make CMakeFiles/encry.dir/encryption/encrypt.c.i
+.PHONY : encryption/encrypt.c.i
+
+encryption/encrypt.s: encryption/encrypt.c.s
+
+.PHONY : encryption/encrypt.s
+
+# target to generate assembly for a file
+encryption/encrypt.c.s:
+	$(MAKE) -f CMakeFiles/encry.dir/build.make CMakeFiles/encry.dir/encryption/encrypt.c.s
+.PHONY : encryption/encrypt.c.s
+
+leak/leakmem.o: leak/leakmem.c.o
+
+.PHONY : leak/leakmem.o
+
+# target to build an object file
+leak/leakmem.c.o:
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/leak/leakmem.c.o
+.PHONY : leak/leakmem.c.o
+
+leak/leakmem.i: leak/leakmem.c.i
+
+.PHONY : leak/leakmem.i
+
+# target to preprocess a source file
+leak/leakmem.c.i:
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/leak/leakmem.c.i
+.PHONY : leak/leakmem.c.i
+
+leak/leakmem.s: leak/leakmem.c.s
+
+.PHONY : leak/leakmem.s
+
+# target to generate assembly for a file
+leak/leakmem.c.s:
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/leak/leakmem.c.s
+.PHONY : leak/leakmem.c.s
+
+leak/leakmem_test.o: leak/leakmem_test.c.o
+
+.PHONY : leak/leakmem_test.o
+
+# target to build an object file
+leak/leakmem_test.c.o:
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/leak/leakmem_test.c.o
+.PHONY : leak/leakmem_test.c.o
+
+leak/leakmem_test.i: leak/leakmem_test.c.i
+
+.PHONY : leak/leakmem_test.i
+
+# target to preprocess a source file
+leak/leakmem_test.c.i:
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/leak/leakmem_test.c.i
+.PHONY : leak/leakmem_test.c.i
+
+leak/leakmem_test.s: leak/leakmem_test.c.s
+
+.PHONY : leak/leakmem_test.s
+
+# target to generate assembly for a file
+leak/leakmem_test.c.s:
+	$(MAKE) -f CMakeFiles/leakmem.dir/build.make CMakeFiles/leakmem.dir/leak/leakmem_test.c.s
+.PHONY : leak/leakmem_test.c.s
 
 main.o: main.cpp.o
 
@@ -129,7 +262,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +271,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,8 +280,62 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+二级指针函数输出.o: 二级指针函数输出.c.o
+
+.PHONY : 二级指针函数输出.o
+
+# target to build an object file
+二级指针函数输出.c.o:
+	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/二级指针函数输出.c.o
+.PHONY : 二级指针函数输出.c.o
+
+二级指针函数输出.i: 二级指针函数输出.c.i
+
+.PHONY : 二级指针函数输出.i
+
+# target to preprocess a source file
+二级指针函数输出.c.i:
+	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/二级指针函数输出.c.i
+.PHONY : 二级指针函数输出.c.i
+
+二级指针函数输出.s: 二级指针函数输出.c.s
+
+.PHONY : 二级指针函数输出.s
+
+# target to generate assembly for a file
+二级指针函数输出.c.s:
+	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/二级指针函数输出.c.s
+.PHONY : 二级指针函数输出.c.s
+
+动态内存分配.o: 动态内存分配.c.o
+
+.PHONY : 动态内存分配.o
+
+# target to build an object file
+动态内存分配.c.o:
+	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/动态内存分配.c.o
+.PHONY : 动态内存分配.c.o
+
+动态内存分配.i: 动态内存分配.c.i
+
+.PHONY : 动态内存分配.i
+
+# target to preprocess a source file
+动态内存分配.c.i:
+	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/动态内存分配.c.i
+.PHONY : 动态内存分配.c.i
+
+动态内存分配.s: 动态内存分配.c.s
+
+.PHONY : 动态内存分配.s
+
+# target to generate assembly for a file
+动态内存分配.c.s:
+	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/动态内存分配.c.s
+.PHONY : 动态内存分配.c.s
 
 # Help Target
 help:
@@ -158,10 +345,29 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Demo"
+	@echo "... encry"
+	@echo "... leakmem"
+	@echo "... main"
+	@echo "... dynamicalloc"
+	@echo "... 2ndPoint"
+	@echo "... encryption/encrypt.o"
+	@echo "... encryption/encrypt.i"
+	@echo "... encryption/encrypt.s"
+	@echo "... leak/leakmem.o"
+	@echo "... leak/leakmem.i"
+	@echo "... leak/leakmem.s"
+	@echo "... leak/leakmem_test.o"
+	@echo "... leak/leakmem_test.i"
+	@echo "... leak/leakmem_test.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... 二级指针函数输出.o"
+	@echo "... 二级指针函数输出.i"
+	@echo "... 二级指针函数输出.s"
+	@echo "... 动态内存分配.o"
+	@echo "... 动态内存分配.i"
+	@echo "... 动态内存分配.s"
 .PHONY : help
 
 

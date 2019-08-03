@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/C:C++/Demo/encryption/encrypt.c
+stdio.h
+/Users/wangqing/Desktop/C:C++/Demo/encryption/stdio.h
+string.h
+/Users/wangqing/Desktop/C:C++/Demo/encryption/string.h
+

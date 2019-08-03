@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/C:C++/Demo/leak/leakmem.h
+mm_malloc.h
+/Users/wangqing/Desktop/C:C++/Demo/leak/mm_malloc.h
+stdio.h
+/Users/wangqing/Desktop/C:C++/Demo/leak/stdio.h
+
+/Users/wangqing/Desktop/C:C++/Demo/leak/leakmem_test.c
+stdio.h
+/Users/wangqing/Desktop/C:C++/Demo/leak/stdio.h
+leakmem.h
+/Users/wangqing/Desktop/C:C++/Demo/leak/leakmem.h
+
