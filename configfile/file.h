@@ -9,10 +9,11 @@
 #ifdef __cplusplus
 extern "C"{
 #endif
-    //写文件
-    int writeFile(char* fileName,char* key,char* value,int* len);
-    //读文件
-    int readFile(char* fileName,char* key,char** value,int* len);
+//写文件
+int writeFile(char* fileName, char* key, char* value,int* len);
+//读文件
+int readFile(char* fileName, char* key, char** value,int* len);
+
 #ifdef __cplusplus
 }
 #endif
