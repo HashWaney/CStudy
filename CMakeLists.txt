@@ -9,3 +9,6 @@ add_executable(2ndPoint 二级指针函数输出.c
 add_executable(dynamicalloc   动态内存分配.c)
 add_executable(leakmem leak/leakmem.h leak/leakmem.c leak/leakmem_test.c)
 add_executable(encry encryption/encrypt.c)
+add_executable(configfile configfile/testconfig.c configfile/cfgfile.c)
+add_executable(memalloc memory_allocate.c)
+add_executable(posarr pointer_arr.c)
