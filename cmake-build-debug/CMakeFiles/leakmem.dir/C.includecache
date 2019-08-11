@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/wangqing/Desktop/C:C++/Demo/leak/leakmem.c
+leakmem.h
+/Users/wangqing/Desktop/C:C++/Demo/leak/leakmem.h
+
 /Users/wangqing/Desktop/C:C++/Demo/leak/leakmem.h
 mm_malloc.h
 /Users/wangqing/Desktop/C:C++/Demo/leak/mm_malloc.h

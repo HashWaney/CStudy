@@ -81,7 +81,22 @@ int main()
         return-1;
 
     }
-    int num =getFilelineNum(file);
+//    int num =getFilelineNum(file);//(//文件指针移动)
+    int num=5;
+    printf("char:    %d\n", sizeof(char));
+    printf("bool:    %d\n", sizeof(bool));
+    printf("short:   %d\n", sizeof(short));
+    printf("int:     %d\n", sizeof(int));
+    printf("long:    %d\n", sizeof(long));
+    printf("double:  %d\n", sizeof(double));
+    printf("----------指针分割线-------------\n");
+    printf("int*:    %d\n", sizeof(int*));
+    printf("void*:   %d\n", sizeof(void*));
+    printf("void**:  %d\n", sizeof(void**));
+    printf("char*:   %d\n",sizeof(char*));
+    printf("double*: %d\n",sizeof(double*));
+    //指针分配的内存大小8个字节
+
     char** pArrays=malloc(sizeof(char*)*num);
     readFileData(file,num,pArrays);
     printData(pArrays,num);

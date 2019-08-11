@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,123 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named multi
+
+# Build rule for target.
+multi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 multi
+.PHONY : multi
+
+# fast build rule for target.
+multi/fast:
+	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/build
+.PHONY : multi/fast
+
+#=============================================================================
+# Target rules for targets named operatefile
+
+# Build rule for target.
+operatefile: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 operatefile
+.PHONY : operatefile
+
+# fast build rule for target.
+operatefile/fast:
+	$(MAKE) -f CMakeFiles/operatefile.dir/build.make CMakeFiles/operatefile.dir/build
+.PHONY : operatefile/fast
+
+#=============================================================================
+# Target rules for targets named pointer_value
+
+# Build rule for target.
+pointer_value: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pointer_value
+.PHONY : pointer_value
+
+# fast build rule for target.
+pointer_value/fast:
+	$(MAKE) -f CMakeFiles/pointer_value.dir/build.make CMakeFiles/pointer_value.dir/build
+.PHONY : pointer_value/fast
+
+#=============================================================================
+# Target rules for targets named memalloc
+
+# Build rule for target.
+memalloc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 memalloc
+.PHONY : memalloc
+
+# fast build rule for target.
+memalloc/fast:
+	$(MAKE) -f CMakeFiles/memalloc.dir/build.make CMakeFiles/memalloc.dir/build
+.PHONY : memalloc/fast
+
+#=============================================================================
+# Target rules for targets named posoperatefile
+
+# Build rule for target.
+posoperatefile: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 posoperatefile
+.PHONY : posoperatefile
+
+# fast build rule for target.
+posoperatefile/fast:
+	$(MAKE) -f CMakeFiles/posoperatefile.dir/build.make CMakeFiles/posoperatefile.dir/build
+.PHONY : posoperatefile/fast
+
+#=============================================================================
+# Target rules for targets named dynamicalloc
+
+# Build rule for target.
+dynamicalloc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamicalloc
+.PHONY : dynamicalloc
+
+# fast build rule for target.
+dynamicalloc/fast:
+	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/build
+.PHONY : dynamicalloc/fast
+
+#=============================================================================
+# Target rules for targets named bubble
+
+# Build rule for target.
+bubble: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bubble
+.PHONY : bubble
+
+# fast build rule for target.
+bubble/fast:
+	$(MAKE) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/build
+.PHONY : bubble/fast
+
+#=============================================================================
+# Target rules for targets named posarr
+
+# Build rule for target.
+posarr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 posarr
+.PHONY : posarr
+
+# fast build rule for target.
+posarr/fast:
+	$(MAKE) -f CMakeFiles/posarr.dir/build.make CMakeFiles/posarr.dir/build
+.PHONY : posarr/fast
+
+#=============================================================================
+# Target rules for targets named configfile
+
+# Build rule for target.
+configfile: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 configfile
+.PHONY : configfile
+
+# fast build rule for target.
+configfile/fast:
+	$(MAKE) -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/build
+.PHONY : configfile/fast
 
 #=============================================================================
 # Target rules for targets named encry
@@ -150,19 +267,6 @@ main/fast:
 .PHONY : main/fast
 
 #=============================================================================
-# Target rules for targets named dynamicalloc
-
-# Build rule for target.
-dynamicalloc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamicalloc
-.PHONY : dynamicalloc
-
-# fast build rule for target.
-dynamicalloc/fast:
-	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/build
-.PHONY : dynamicalloc/fast
-
-#=============================================================================
 # Target rules for targets named 2ndPoint
 
 # Build rule for target.
@@ -174,6 +278,114 @@ dynamicalloc/fast:
 2ndPoint/fast:
 	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/build
 .PHONY : 2ndPoint/fast
+
+C++/多态.o: C++/多态.cpp.o
+
+.PHONY : C++/多态.o
+
+# target to build an object file
+C++/多态.cpp.o:
+	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/多态.cpp.o
+.PHONY : C++/多态.cpp.o
+
+C++/多态.i: C++/多态.cpp.i
+
+.PHONY : C++/多态.i
+
+# target to preprocess a source file
+C++/多态.cpp.i:
+	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/多态.cpp.i
+.PHONY : C++/多态.cpp.i
+
+C++/多态.s: C++/多态.cpp.s
+
+.PHONY : C++/多态.s
+
+# target to generate assembly for a file
+C++/多态.cpp.s:
+	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/多态.cpp.s
+.PHONY : C++/多态.cpp.s
+
+bubble.o: bubble.cpp.o
+
+.PHONY : bubble.o
+
+# target to build an object file
+bubble.cpp.o:
+	$(MAKE) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/bubble.cpp.o
+.PHONY : bubble.cpp.o
+
+bubble.i: bubble.cpp.i
+
+.PHONY : bubble.i
+
+# target to preprocess a source file
+bubble.cpp.i:
+	$(MAKE) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/bubble.cpp.i
+.PHONY : bubble.cpp.i
+
+bubble.s: bubble.cpp.s
+
+.PHONY : bubble.s
+
+# target to generate assembly for a file
+bubble.cpp.s:
+	$(MAKE) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/bubble.cpp.s
+.PHONY : bubble.cpp.s
+
+configfile/cfgfile.o: configfile/cfgfile.c.o
+
+.PHONY : configfile/cfgfile.o
+
+# target to build an object file
+configfile/cfgfile.c.o:
+	$(MAKE) -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/configfile/cfgfile.c.o
+.PHONY : configfile/cfgfile.c.o
+
+configfile/cfgfile.i: configfile/cfgfile.c.i
+
+.PHONY : configfile/cfgfile.i
+
+# target to preprocess a source file
+configfile/cfgfile.c.i:
+	$(MAKE) -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/configfile/cfgfile.c.i
+.PHONY : configfile/cfgfile.c.i
+
+configfile/cfgfile.s: configfile/cfgfile.c.s
+
+.PHONY : configfile/cfgfile.s
+
+# target to generate assembly for a file
+configfile/cfgfile.c.s:
+	$(MAKE) -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/configfile/cfgfile.c.s
+.PHONY : configfile/cfgfile.c.s
+
+configfile/testconfig.o: configfile/testconfig.c.o
+
+.PHONY : configfile/testconfig.o
+
+# target to build an object file
+configfile/testconfig.c.o:
+	$(MAKE) -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/configfile/testconfig.c.o
+.PHONY : configfile/testconfig.c.o
+
+configfile/testconfig.i: configfile/testconfig.c.i
+
+.PHONY : configfile/testconfig.i
+
+# target to preprocess a source file
+configfile/testconfig.c.i:
+	$(MAKE) -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/configfile/testconfig.c.i
+.PHONY : configfile/testconfig.c.i
+
+configfile/testconfig.s: configfile/testconfig.c.s
+
+.PHONY : configfile/testconfig.s
+
+# target to generate assembly for a file
+configfile/testconfig.c.s:
+	$(MAKE) -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/configfile/testconfig.c.s
+.PHONY : configfile/testconfig.c.s
 
 encryption/encrypt.o: encryption/encrypt.c.o
 
@@ -283,6 +495,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+memory_allocate.o: memory_allocate.c.o
+
+.PHONY : memory_allocate.o
+
+# target to build an object file
+memory_allocate.c.o:
+	$(MAKE) -f CMakeFiles/memalloc.dir/build.make CMakeFiles/memalloc.dir/memory_allocate.c.o
+.PHONY : memory_allocate.c.o
+
+memory_allocate.i: memory_allocate.c.i
+
+.PHONY : memory_allocate.i
+
+# target to preprocess a source file
+memory_allocate.c.i:
+	$(MAKE) -f CMakeFiles/memalloc.dir/build.make CMakeFiles/memalloc.dir/memory_allocate.c.i
+.PHONY : memory_allocate.c.i
+
+memory_allocate.s: memory_allocate.c.s
+
+.PHONY : memory_allocate.s
+
+# target to generate assembly for a file
+memory_allocate.c.s:
+	$(MAKE) -f CMakeFiles/memalloc.dir/build.make CMakeFiles/memalloc.dir/memory_allocate.c.s
+.PHONY : memory_allocate.c.s
+
+operatefile/file.o: operatefile/file.c.o
+
+.PHONY : operatefile/file.o
+
+# target to build an object file
+operatefile/file.c.o:
+	$(MAKE) -f CMakeFiles/operatefile.dir/build.make CMakeFiles/operatefile.dir/operatefile/file.c.o
+.PHONY : operatefile/file.c.o
+
+operatefile/file.i: operatefile/file.c.i
+
+.PHONY : operatefile/file.i
+
+# target to preprocess a source file
+operatefile/file.c.i:
+	$(MAKE) -f CMakeFiles/operatefile.dir/build.make CMakeFiles/operatefile.dir/operatefile/file.c.i
+.PHONY : operatefile/file.c.i
+
+operatefile/file.s: operatefile/file.c.s
+
+.PHONY : operatefile/file.s
+
+# target to generate assembly for a file
+operatefile/file.c.s:
+	$(MAKE) -f CMakeFiles/operatefile.dir/build.make CMakeFiles/operatefile.dir/operatefile/file.c.s
+.PHONY : operatefile/file.c.s
+
+pointer_arr.o: pointer_arr.c.o
+
+.PHONY : pointer_arr.o
+
+# target to build an object file
+pointer_arr.c.o:
+	$(MAKE) -f CMakeFiles/posarr.dir/build.make CMakeFiles/posarr.dir/pointer_arr.c.o
+.PHONY : pointer_arr.c.o
+
+pointer_arr.i: pointer_arr.c.i
+
+.PHONY : pointer_arr.i
+
+# target to preprocess a source file
+pointer_arr.c.i:
+	$(MAKE) -f CMakeFiles/posarr.dir/build.make CMakeFiles/posarr.dir/pointer_arr.c.i
+.PHONY : pointer_arr.c.i
+
+pointer_arr.s: pointer_arr.c.s
+
+.PHONY : pointer_arr.s
+
+# target to generate assembly for a file
+pointer_arr.c.s:
+	$(MAKE) -f CMakeFiles/posarr.dir/build.make CMakeFiles/posarr.dir/pointer_arr.c.s
+.PHONY : pointer_arr.c.s
+
 二级指针函数输出.o: 二级指针函数输出.c.o
 
 .PHONY : 二级指针函数输出.o
@@ -309,6 +602,33 @@ main.cpp.s:
 二级指针函数输出.c.s:
 	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/二级指针函数输出.c.s
 .PHONY : 二级指针函数输出.c.s
+
+二级指针操作文件.o: 二级指针操作文件.c.o
+
+.PHONY : 二级指针操作文件.o
+
+# target to build an object file
+二级指针操作文件.c.o:
+	$(MAKE) -f CMakeFiles/posoperatefile.dir/build.make CMakeFiles/posoperatefile.dir/二级指针操作文件.c.o
+.PHONY : 二级指针操作文件.c.o
+
+二级指针操作文件.i: 二级指针操作文件.c.i
+
+.PHONY : 二级指针操作文件.i
+
+# target to preprocess a source file
+二级指针操作文件.c.i:
+	$(MAKE) -f CMakeFiles/posoperatefile.dir/build.make CMakeFiles/posoperatefile.dir/二级指针操作文件.c.i
+.PHONY : 二级指针操作文件.c.i
+
+二级指针操作文件.s: 二级指针操作文件.c.s
+
+.PHONY : 二级指针操作文件.s
+
+# target to generate assembly for a file
+二级指针操作文件.c.s:
+	$(MAKE) -f CMakeFiles/posoperatefile.dir/build.make CMakeFiles/posoperatefile.dir/二级指针操作文件.c.s
+.PHONY : 二级指针操作文件.c.s
 
 动态内存分配.o: 动态内存分配.c.o
 
@@ -337,19 +657,66 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/动态内存分配.c.s
 .PHONY : 动态内存分配.c.s
 
+指针赋值.o: 指针赋值.c.o
+
+.PHONY : 指针赋值.o
+
+# target to build an object file
+指针赋值.c.o:
+	$(MAKE) -f CMakeFiles/pointer_value.dir/build.make CMakeFiles/pointer_value.dir/指针赋值.c.o
+.PHONY : 指针赋值.c.o
+
+指针赋值.i: 指针赋值.c.i
+
+.PHONY : 指针赋值.i
+
+# target to preprocess a source file
+指针赋值.c.i:
+	$(MAKE) -f CMakeFiles/pointer_value.dir/build.make CMakeFiles/pointer_value.dir/指针赋值.c.i
+.PHONY : 指针赋值.c.i
+
+指针赋值.s: 指针赋值.c.s
+
+.PHONY : 指针赋值.s
+
+# target to generate assembly for a file
+指针赋值.c.s:
+	$(MAKE) -f CMakeFiles/pointer_value.dir/build.make CMakeFiles/pointer_value.dir/指针赋值.c.s
+.PHONY : 指针赋值.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... multi"
+	@echo "... operatefile"
+	@echo "... pointer_value"
+	@echo "... memalloc"
+	@echo "... posoperatefile"
+	@echo "... dynamicalloc"
+	@echo "... bubble"
+	@echo "... posarr"
+	@echo "... configfile"
 	@echo "... encry"
 	@echo "... leakmem"
 	@echo "... main"
-	@echo "... dynamicalloc"
 	@echo "... 2ndPoint"
+	@echo "... C++/多态.o"
+	@echo "... C++/多态.i"
+	@echo "... C++/多态.s"
+	@echo "... bubble.o"
+	@echo "... bubble.i"
+	@echo "... bubble.s"
+	@echo "... configfile/cfgfile.o"
+	@echo "... configfile/cfgfile.i"
+	@echo "... configfile/cfgfile.s"
+	@echo "... configfile/testconfig.o"
+	@echo "... configfile/testconfig.i"
+	@echo "... configfile/testconfig.s"
 	@echo "... encryption/encrypt.o"
 	@echo "... encryption/encrypt.i"
 	@echo "... encryption/encrypt.s"
@@ -362,12 +729,27 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... memory_allocate.o"
+	@echo "... memory_allocate.i"
+	@echo "... memory_allocate.s"
+	@echo "... operatefile/file.o"
+	@echo "... operatefile/file.i"
+	@echo "... operatefile/file.s"
+	@echo "... pointer_arr.o"
+	@echo "... pointer_arr.i"
+	@echo "... pointer_arr.s"
 	@echo "... 二级指针函数输出.o"
 	@echo "... 二级指针函数输出.i"
 	@echo "... 二级指针函数输出.s"
+	@echo "... 二级指针操作文件.o"
+	@echo "... 二级指针操作文件.i"
+	@echo "... 二级指针操作文件.s"
 	@echo "... 动态内存分配.o"
 	@echo "... 动态内存分配.i"
 	@echo "... 动态内存分配.s"
+	@echo "... 指针赋值.o"
+	@echo "... 指针赋值.i"
+	@echo "... 指针赋值.s"
 .PHONY : help
 
 

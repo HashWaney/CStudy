@@ -15,14 +15,14 @@
 int main()
 {
     int a[100]={0};
-    printf("int 数组分配了内存空间大小：%d", sizeof(a));
+    printf("int 数组分配了内存空间大小：%d\n", sizeof(a));
     int array[2][3]={{1,2,3},{4,5,6}};
     //数组指针
     //int(*p)[n];p是一个指针，指向一个整型的一维数组，这个一维数组的长度是n
     int(*array_p)[3]=array;
     //取出5
-    printf("%x\n",(unsigned int) array_p);
-    printf("%x\n",(unsigned int)(array_p+1));
+    printf("%p\n",* array_p);
+    printf("%p\n",*(array_p+1));
     printf("取出5元素 Location:%p  Size: %d\n",(*(array_p+1)+1),*(*(array_p+1)+1));
     //普通遍历
     for (int i = 0; i < 2; ++i) {
