@@ -361,6 +361,43 @@ clean: CMakeFiles/posarr.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/variablepar.dir
+
+# All Build rule for target.
+CMakeFiles/variablepar.dir/all:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/depend
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target variablepar"
+.PHONY : CMakeFiles/variablepar.dir/all
+
+# Include target in all.
+all: CMakeFiles/variablepar.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/variablepar.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/variablepar.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/variablepar.dir/rule
+
+# Convenience name for target.
+variablepar: CMakeFiles/variablepar.dir/rule
+
+.PHONY : variablepar
+
+# clean rule for target.
+CMakeFiles/variablepar.dir/clean:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/clean
+.PHONY : CMakeFiles/variablepar.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/variablepar.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/multi2.dir
 
 # All Build rule for target.

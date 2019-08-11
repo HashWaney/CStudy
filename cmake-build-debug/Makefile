@@ -215,6 +215,19 @@ posarr/fast:
 .PHONY : posarr/fast
 
 #=============================================================================
+# Target rules for targets named variablepar
+
+# Build rule for target.
+variablepar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 variablepar
+.PHONY : variablepar
+
+# fast build rule for target.
+variablepar/fast:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/build
+.PHONY : variablepar/fast
+
+#=============================================================================
 # Target rules for targets named multi2
 
 # Build rule for target.
@@ -292,59 +305,86 @@ main/fast:
 	$(MAKE) -f CMakeFiles/2ndPoint.dir/build.make CMakeFiles/2ndPoint.dir/build
 .PHONY : 2ndPoint/fast
 
-C++/多态.o: C++/多态.cpp.o
+C++/Polymorphism/多态.o: C++/Polymorphism/多态.cpp.o
 
-.PHONY : C++/多态.o
-
-# target to build an object file
-C++/多态.cpp.o:
-	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/多态.cpp.o
-.PHONY : C++/多态.cpp.o
-
-C++/多态.i: C++/多态.cpp.i
-
-.PHONY : C++/多态.i
-
-# target to preprocess a source file
-C++/多态.cpp.i:
-	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/多态.cpp.i
-.PHONY : C++/多态.cpp.i
-
-C++/多态.s: C++/多态.cpp.s
-
-.PHONY : C++/多态.s
-
-# target to generate assembly for a file
-C++/多态.cpp.s:
-	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/多态.cpp.s
-.PHONY : C++/多态.cpp.s
-
-C++/多态与虚函数.o: C++/多态与虚函数.cpp.o
-
-.PHONY : C++/多态与虚函数.o
+.PHONY : C++/Polymorphism/多态.o
 
 # target to build an object file
-C++/多态与虚函数.cpp.o:
-	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/多态与虚函数.cpp.o
-.PHONY : C++/多态与虚函数.cpp.o
+C++/Polymorphism/多态.cpp.o:
+	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/Polymorphism/多态.cpp.o
+.PHONY : C++/Polymorphism/多态.cpp.o
 
-C++/多态与虚函数.i: C++/多态与虚函数.cpp.i
+C++/Polymorphism/多态.i: C++/Polymorphism/多态.cpp.i
 
-.PHONY : C++/多态与虚函数.i
+.PHONY : C++/Polymorphism/多态.i
 
 # target to preprocess a source file
-C++/多态与虚函数.cpp.i:
-	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/多态与虚函数.cpp.i
-.PHONY : C++/多态与虚函数.cpp.i
+C++/Polymorphism/多态.cpp.i:
+	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/Polymorphism/多态.cpp.i
+.PHONY : C++/Polymorphism/多态.cpp.i
 
-C++/多态与虚函数.s: C++/多态与虚函数.cpp.s
+C++/Polymorphism/多态.s: C++/Polymorphism/多态.cpp.s
 
-.PHONY : C++/多态与虚函数.s
+.PHONY : C++/Polymorphism/多态.s
 
 # target to generate assembly for a file
-C++/多态与虚函数.cpp.s:
-	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/多态与虚函数.cpp.s
-.PHONY : C++/多态与虚函数.cpp.s
+C++/Polymorphism/多态.cpp.s:
+	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/Polymorphism/多态.cpp.s
+.PHONY : C++/Polymorphism/多态.cpp.s
+
+C++/Polymorphism/多态与虚函数.o: C++/Polymorphism/多态与虚函数.cpp.o
+
+.PHONY : C++/Polymorphism/多态与虚函数.o
+
+# target to build an object file
+C++/Polymorphism/多态与虚函数.cpp.o:
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/Polymorphism/多态与虚函数.cpp.o
+.PHONY : C++/Polymorphism/多态与虚函数.cpp.o
+
+C++/Polymorphism/多态与虚函数.i: C++/Polymorphism/多态与虚函数.cpp.i
+
+.PHONY : C++/Polymorphism/多态与虚函数.i
+
+# target to preprocess a source file
+C++/Polymorphism/多态与虚函数.cpp.i:
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/Polymorphism/多态与虚函数.cpp.i
+.PHONY : C++/Polymorphism/多态与虚函数.cpp.i
+
+C++/Polymorphism/多态与虚函数.s: C++/Polymorphism/多态与虚函数.cpp.s
+
+.PHONY : C++/Polymorphism/多态与虚函数.s
+
+# target to generate assembly for a file
+C++/Polymorphism/多态与虚函数.cpp.s:
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/Polymorphism/多态与虚函数.cpp.s
+.PHONY : C++/Polymorphism/多态与虚函数.cpp.s
+
+C++/variableParam.o: C++/variableParam.cpp.o
+
+.PHONY : C++/variableParam.o
+
+# target to build an object file
+C++/variableParam.cpp.o:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/variableParam.cpp.o
+.PHONY : C++/variableParam.cpp.o
+
+C++/variableParam.i: C++/variableParam.cpp.i
+
+.PHONY : C++/variableParam.i
+
+# target to preprocess a source file
+C++/variableParam.cpp.i:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/variableParam.cpp.i
+.PHONY : C++/variableParam.cpp.i
+
+C++/variableParam.s: C++/variableParam.cpp.s
+
+.PHONY : C++/variableParam.s
+
+# target to generate assembly for a file
+C++/variableParam.cpp.s:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/variableParam.cpp.s
+.PHONY : C++/variableParam.cpp.s
 
 bubble.o: bubble.cpp.o
 
@@ -740,18 +780,22 @@ help:
 	@echo "... dynamicalloc"
 	@echo "... bubble"
 	@echo "... posarr"
+	@echo "... variablepar"
 	@echo "... multi2"
 	@echo "... configfile"
 	@echo "... encry"
 	@echo "... leakmem"
 	@echo "... main"
 	@echo "... 2ndPoint"
-	@echo "... C++/多态.o"
-	@echo "... C++/多态.i"
-	@echo "... C++/多态.s"
-	@echo "... C++/多态与虚函数.o"
-	@echo "... C++/多态与虚函数.i"
-	@echo "... C++/多态与虚函数.s"
+	@echo "... C++/Polymorphism/多态.o"
+	@echo "... C++/Polymorphism/多态.i"
+	@echo "... C++/Polymorphism/多态.s"
+	@echo "... C++/Polymorphism/多态与虚函数.o"
+	@echo "... C++/Polymorphism/多态与虚函数.i"
+	@echo "... C++/Polymorphism/多态与虚函数.s"
+	@echo "... C++/variableParam.o"
+	@echo "... C++/variableParam.i"
+	@echo "... C++/variableParam.s"
 	@echo "... bubble.o"
 	@echo "... bubble.i"
 	@echo "... bubble.s"
