@@ -215,6 +215,19 @@ posarr/fast:
 .PHONY : posarr/fast
 
 #=============================================================================
+# Target rules for targets named multi2
+
+# Build rule for target.
+multi2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 multi2
+.PHONY : multi2
+
+# fast build rule for target.
+multi2/fast:
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/build
+.PHONY : multi2/fast
+
+#=============================================================================
 # Target rules for targets named configfile
 
 # Build rule for target.
@@ -305,6 +318,33 @@ C++/多态.s: C++/多态.cpp.s
 C++/多态.cpp.s:
 	$(MAKE) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/C++/多态.cpp.s
 .PHONY : C++/多态.cpp.s
+
+C++/多态与虚函数.o: C++/多态与虚函数.cpp.o
+
+.PHONY : C++/多态与虚函数.o
+
+# target to build an object file
+C++/多态与虚函数.cpp.o:
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/多态与虚函数.cpp.o
+.PHONY : C++/多态与虚函数.cpp.o
+
+C++/多态与虚函数.i: C++/多态与虚函数.cpp.i
+
+.PHONY : C++/多态与虚函数.i
+
+# target to preprocess a source file
+C++/多态与虚函数.cpp.i:
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/多态与虚函数.cpp.i
+.PHONY : C++/多态与虚函数.cpp.i
+
+C++/多态与虚函数.s: C++/多态与虚函数.cpp.s
+
+.PHONY : C++/多态与虚函数.s
+
+# target to generate assembly for a file
+C++/多态与虚函数.cpp.s:
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/多态与虚函数.cpp.s
+.PHONY : C++/多态与虚函数.cpp.s
 
 bubble.o: bubble.cpp.o
 
@@ -700,6 +740,7 @@ help:
 	@echo "... dynamicalloc"
 	@echo "... bubble"
 	@echo "... posarr"
+	@echo "... multi2"
 	@echo "... configfile"
 	@echo "... encry"
 	@echo "... leakmem"
@@ -708,6 +749,9 @@ help:
 	@echo "... C++/多态.o"
 	@echo "... C++/多态.i"
 	@echo "... C++/多态.s"
+	@echo "... C++/多态与虚函数.o"
+	@echo "... C++/多态与虚函数.i"
+	@echo "... C++/多态与虚函数.s"
 	@echo "... bubble.o"
 	@echo "... bubble.i"
 	@echo "... bubble.s"

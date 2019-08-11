@@ -108,7 +108,7 @@ clean: CMakeFiles/multi.dir/clean
 CMakeFiles/operatefile.dir/all:
 	$(MAKE) -f CMakeFiles/operatefile.dir/build.make CMakeFiles/operatefile.dir/depend
 	$(MAKE) -f CMakeFiles/operatefile.dir/build.make CMakeFiles/operatefile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target operatefile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target operatefile"
 .PHONY : CMakeFiles/operatefile.dir/all
 
 # Include target in all.
@@ -145,7 +145,7 @@ clean: CMakeFiles/operatefile.dir/clean
 CMakeFiles/pointer_value.dir/all:
 	$(MAKE) -f CMakeFiles/pointer_value.dir/build.make CMakeFiles/pointer_value.dir/depend
 	$(MAKE) -f CMakeFiles/pointer_value.dir/build.make CMakeFiles/pointer_value.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target pointer_value"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target pointer_value"
 .PHONY : CMakeFiles/pointer_value.dir/all
 
 # Include target in all.
@@ -219,7 +219,7 @@ clean: CMakeFiles/memalloc.dir/clean
 CMakeFiles/posoperatefile.dir/all:
 	$(MAKE) -f CMakeFiles/posoperatefile.dir/build.make CMakeFiles/posoperatefile.dir/depend
 	$(MAKE) -f CMakeFiles/posoperatefile.dir/build.make CMakeFiles/posoperatefile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target posoperatefile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target posoperatefile"
 .PHONY : CMakeFiles/posoperatefile.dir/all
 
 # Include target in all.
@@ -330,7 +330,7 @@ clean: CMakeFiles/bubble.dir/clean
 CMakeFiles/posarr.dir/all:
 	$(MAKE) -f CMakeFiles/posarr.dir/build.make CMakeFiles/posarr.dir/depend
 	$(MAKE) -f CMakeFiles/posarr.dir/build.make CMakeFiles/posarr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target posarr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target posarr"
 .PHONY : CMakeFiles/posarr.dir/all
 
 # Include target in all.
@@ -357,6 +357,43 @@ CMakeFiles/posarr.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/posarr.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/multi2.dir
+
+# All Build rule for target.
+CMakeFiles/multi2.dir/all:
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/depend
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target multi2"
+.PHONY : CMakeFiles/multi2.dir/all
+
+# Include target in all.
+all: CMakeFiles/multi2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/multi2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/multi2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/multi2.dir/rule
+
+# Convenience name for target.
+multi2: CMakeFiles/multi2.dir/rule
+
+.PHONY : multi2
+
+# clean rule for target.
+CMakeFiles/multi2.dir/clean:
+	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/clean
+.PHONY : CMakeFiles/multi2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/multi2.dir/clean
 
 .PHONY : clean
 
