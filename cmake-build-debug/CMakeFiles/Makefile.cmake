@@ -49,6 +49,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/inherit.dir/DependInfo.cmake"
   "CMakeFiles/multi.dir/DependInfo.cmake"
   "CMakeFiles/operatefile.dir/DependInfo.cmake"
   "CMakeFiles/pointer_value.dir/DependInfo.cmake"

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named inherit
+
+# Build rule for target.
+inherit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 inherit
+.PHONY : inherit
+
+# fast build rule for target.
+inherit/fast:
+	$(MAKE) -f CMakeFiles/inherit.dir/build.make CMakeFiles/inherit.dir/build
+.PHONY : inherit/fast
+
+#=============================================================================
 # Target rules for targets named multi
 
 # Build rule for target.
@@ -359,32 +372,59 @@ C++/Polymorphism/多态与虚函数.cpp.s:
 	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/Polymorphism/多态与虚函数.cpp.s
 .PHONY : C++/Polymorphism/多态与虚函数.cpp.s
 
-C++/variableParam.o: C++/variableParam.cpp.o
+C++/Scattered/inherit.o: C++/Scattered/inherit.cpp.o
 
-.PHONY : C++/variableParam.o
+.PHONY : C++/Scattered/inherit.o
 
 # target to build an object file
-C++/variableParam.cpp.o:
-	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/variableParam.cpp.o
-.PHONY : C++/variableParam.cpp.o
+C++/Scattered/inherit.cpp.o:
+	$(MAKE) -f CMakeFiles/inherit.dir/build.make CMakeFiles/inherit.dir/C++/Scattered/inherit.cpp.o
+.PHONY : C++/Scattered/inherit.cpp.o
 
-C++/variableParam.i: C++/variableParam.cpp.i
+C++/Scattered/inherit.i: C++/Scattered/inherit.cpp.i
 
-.PHONY : C++/variableParam.i
+.PHONY : C++/Scattered/inherit.i
 
 # target to preprocess a source file
-C++/variableParam.cpp.i:
-	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/variableParam.cpp.i
-.PHONY : C++/variableParam.cpp.i
+C++/Scattered/inherit.cpp.i:
+	$(MAKE) -f CMakeFiles/inherit.dir/build.make CMakeFiles/inherit.dir/C++/Scattered/inherit.cpp.i
+.PHONY : C++/Scattered/inherit.cpp.i
 
-C++/variableParam.s: C++/variableParam.cpp.s
+C++/Scattered/inherit.s: C++/Scattered/inherit.cpp.s
 
-.PHONY : C++/variableParam.s
+.PHONY : C++/Scattered/inherit.s
 
 # target to generate assembly for a file
-C++/variableParam.cpp.s:
-	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/variableParam.cpp.s
-.PHONY : C++/variableParam.cpp.s
+C++/Scattered/inherit.cpp.s:
+	$(MAKE) -f CMakeFiles/inherit.dir/build.make CMakeFiles/inherit.dir/C++/Scattered/inherit.cpp.s
+.PHONY : C++/Scattered/inherit.cpp.s
+
+C++/Scattered/variableParam.o: C++/Scattered/variableParam.cpp.o
+
+.PHONY : C++/Scattered/variableParam.o
+
+# target to build an object file
+C++/Scattered/variableParam.cpp.o:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/Scattered/variableParam.cpp.o
+.PHONY : C++/Scattered/variableParam.cpp.o
+
+C++/Scattered/variableParam.i: C++/Scattered/variableParam.cpp.i
+
+.PHONY : C++/Scattered/variableParam.i
+
+# target to preprocess a source file
+C++/Scattered/variableParam.cpp.i:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/Scattered/variableParam.cpp.i
+.PHONY : C++/Scattered/variableParam.cpp.i
+
+C++/Scattered/variableParam.s: C++/Scattered/variableParam.cpp.s
+
+.PHONY : C++/Scattered/variableParam.s
+
+# target to generate assembly for a file
+C++/Scattered/variableParam.cpp.s:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/Scattered/variableParam.cpp.s
+.PHONY : C++/Scattered/variableParam.cpp.s
 
 bubble.o: bubble.cpp.o
 
@@ -771,6 +811,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... inherit"
 	@echo "... rebuild_cache"
 	@echo "... multi"
 	@echo "... operatefile"
@@ -793,9 +834,12 @@ help:
 	@echo "... C++/Polymorphism/多态与虚函数.o"
 	@echo "... C++/Polymorphism/多态与虚函数.i"
 	@echo "... C++/Polymorphism/多态与虚函数.s"
-	@echo "... C++/variableParam.o"
-	@echo "... C++/variableParam.i"
-	@echo "... C++/variableParam.s"
+	@echo "... C++/Scattered/inherit.o"
+	@echo "... C++/Scattered/inherit.i"
+	@echo "... C++/Scattered/inherit.s"
+	@echo "... C++/Scattered/variableParam.o"
+	@echo "... C++/Scattered/variableParam.i"
+	@echo "... C++/Scattered/variableParam.s"
 	@echo "... bubble.o"
 	@echo "... bubble.i"
 	@echo "... bubble.s"

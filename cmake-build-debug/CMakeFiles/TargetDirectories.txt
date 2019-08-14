@@ -1,4 +1,5 @@
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/inherit.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/multi.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/operatefile.dir

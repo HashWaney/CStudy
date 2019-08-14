@@ -18,4 +18,7 @@ add_executable(pointer_value 指针赋值.c)
 add_executable(operatefile operatefile/file.c)
 add_executable(multi C++/Polymorphism/多态.cpp)
 add_executable(multi2 C++/Polymorphism/多态与虚函数.cpp)
-add_executable(variablepar C++/variableParam.cpp)
+add_executable(variablepar C++/Scattered/variableParam.cpp)
+add_executable(inherit C++/Scattered/inherit.cpp)
+
+
