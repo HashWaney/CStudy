@@ -20,5 +20,6 @@ add_executable(multi C++/Polymorphism/多态.cpp)
 add_executable(multi2 C++/Polymorphism/多态与虚函数.cpp)
 add_executable(variablepar C++/Scattered/variableParam.cpp)
 add_executable(inherit C++/Scattered/inherit.cpp)
-
+add_executable(overload C++/overload/FunctionOverloading.cpp)
+add_executable(func C++/Scattered/Function.cpp)
 

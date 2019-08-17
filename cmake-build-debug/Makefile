@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named func
+
+# Build rule for target.
+func: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 func
+.PHONY : func
+
+# fast build rule for target.
+func/fast:
+	$(MAKE) -f CMakeFiles/func.dir/build.make CMakeFiles/func.dir/build
+.PHONY : func/fast
+
+#=============================================================================
 # Target rules for targets named inherit
 
 # Build rule for target.
@@ -213,6 +226,19 @@ bubble: cmake_check_build_system
 bubble/fast:
 	$(MAKE) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/build
 .PHONY : bubble/fast
+
+#=============================================================================
+# Target rules for targets named overload
+
+# Build rule for target.
+overload: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 overload
+.PHONY : overload
+
+# fast build rule for target.
+overload/fast:
+	$(MAKE) -f CMakeFiles/overload.dir/build.make CMakeFiles/overload.dir/build
+.PHONY : overload/fast
 
 #=============================================================================
 # Target rules for targets named posarr
@@ -372,6 +398,33 @@ C++/Polymorphism/多态与虚函数.cpp.s:
 	$(MAKE) -f CMakeFiles/multi2.dir/build.make CMakeFiles/multi2.dir/C++/Polymorphism/多态与虚函数.cpp.s
 .PHONY : C++/Polymorphism/多态与虚函数.cpp.s
 
+C++/Scattered/Function.o: C++/Scattered/Function.cpp.o
+
+.PHONY : C++/Scattered/Function.o
+
+# target to build an object file
+C++/Scattered/Function.cpp.o:
+	$(MAKE) -f CMakeFiles/func.dir/build.make CMakeFiles/func.dir/C++/Scattered/Function.cpp.o
+.PHONY : C++/Scattered/Function.cpp.o
+
+C++/Scattered/Function.i: C++/Scattered/Function.cpp.i
+
+.PHONY : C++/Scattered/Function.i
+
+# target to preprocess a source file
+C++/Scattered/Function.cpp.i:
+	$(MAKE) -f CMakeFiles/func.dir/build.make CMakeFiles/func.dir/C++/Scattered/Function.cpp.i
+.PHONY : C++/Scattered/Function.cpp.i
+
+C++/Scattered/Function.s: C++/Scattered/Function.cpp.s
+
+.PHONY : C++/Scattered/Function.s
+
+# target to generate assembly for a file
+C++/Scattered/Function.cpp.s:
+	$(MAKE) -f CMakeFiles/func.dir/build.make CMakeFiles/func.dir/C++/Scattered/Function.cpp.s
+.PHONY : C++/Scattered/Function.cpp.s
+
 C++/Scattered/inherit.o: C++/Scattered/inherit.cpp.o
 
 .PHONY : C++/Scattered/inherit.o
@@ -425,6 +478,33 @@ C++/Scattered/variableParam.s: C++/Scattered/variableParam.cpp.s
 C++/Scattered/variableParam.cpp.s:
 	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/Scattered/variableParam.cpp.s
 .PHONY : C++/Scattered/variableParam.cpp.s
+
+C++/overload/FunctionOverloading.o: C++/overload/FunctionOverloading.cpp.o
+
+.PHONY : C++/overload/FunctionOverloading.o
+
+# target to build an object file
+C++/overload/FunctionOverloading.cpp.o:
+	$(MAKE) -f CMakeFiles/overload.dir/build.make CMakeFiles/overload.dir/C++/overload/FunctionOverloading.cpp.o
+.PHONY : C++/overload/FunctionOverloading.cpp.o
+
+C++/overload/FunctionOverloading.i: C++/overload/FunctionOverloading.cpp.i
+
+.PHONY : C++/overload/FunctionOverloading.i
+
+# target to preprocess a source file
+C++/overload/FunctionOverloading.cpp.i:
+	$(MAKE) -f CMakeFiles/overload.dir/build.make CMakeFiles/overload.dir/C++/overload/FunctionOverloading.cpp.i
+.PHONY : C++/overload/FunctionOverloading.cpp.i
+
+C++/overload/FunctionOverloading.s: C++/overload/FunctionOverloading.cpp.s
+
+.PHONY : C++/overload/FunctionOverloading.s
+
+# target to generate assembly for a file
+C++/overload/FunctionOverloading.cpp.s:
+	$(MAKE) -f CMakeFiles/overload.dir/build.make CMakeFiles/overload.dir/C++/overload/FunctionOverloading.cpp.s
+.PHONY : C++/overload/FunctionOverloading.cpp.s
 
 bubble.o: bubble.cpp.o
 
@@ -811,6 +891,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... func"
 	@echo "... inherit"
 	@echo "... rebuild_cache"
 	@echo "... multi"
@@ -820,6 +901,7 @@ help:
 	@echo "... posoperatefile"
 	@echo "... dynamicalloc"
 	@echo "... bubble"
+	@echo "... overload"
 	@echo "... posarr"
 	@echo "... variablepar"
 	@echo "... multi2"
@@ -834,12 +916,18 @@ help:
 	@echo "... C++/Polymorphism/多态与虚函数.o"
 	@echo "... C++/Polymorphism/多态与虚函数.i"
 	@echo "... C++/Polymorphism/多态与虚函数.s"
+	@echo "... C++/Scattered/Function.o"
+	@echo "... C++/Scattered/Function.i"
+	@echo "... C++/Scattered/Function.s"
 	@echo "... C++/Scattered/inherit.o"
 	@echo "... C++/Scattered/inherit.i"
 	@echo "... C++/Scattered/inherit.s"
 	@echo "... C++/Scattered/variableParam.o"
 	@echo "... C++/Scattered/variableParam.i"
 	@echo "... C++/Scattered/variableParam.s"
+	@echo "... C++/overload/FunctionOverloading.o"
+	@echo "... C++/overload/FunctionOverloading.i"
+	@echo "... C++/overload/FunctionOverloading.s"
 	@echo "... bubble.o"
 	@echo "... bubble.i"
 	@echo "... bubble.s"
