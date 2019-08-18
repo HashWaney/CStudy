@@ -9,11 +9,13 @@
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/posoperatefile.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/dynamicalloc.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/bubble.dir
+/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/namespace.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/overload.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/posarr.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/variablepar.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/multi2.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/configfile.dir
+/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/thread.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/encry.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/leakmem.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/main.dir

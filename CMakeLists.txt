@@ -22,4 +22,5 @@ add_executable(variablepar C++/Scattered/variableParam.cpp)
 add_executable(inherit C++/Scattered/inherit.cpp)
 add_executable(overload C++/overload/FunctionOverloading.cpp)
 add_executable(func C++/Scattered/Function.cpp)
-
+add_executable(thread thread/pthread.c)
+add_executable(namespace C++/Scattered/namespace_demo.cpp)

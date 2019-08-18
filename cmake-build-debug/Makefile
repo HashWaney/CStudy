@@ -228,6 +228,19 @@ bubble/fast:
 .PHONY : bubble/fast
 
 #=============================================================================
+# Target rules for targets named namespace
+
+# Build rule for target.
+namespace: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 namespace
+.PHONY : namespace
+
+# fast build rule for target.
+namespace/fast:
+	$(MAKE) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/build
+.PHONY : namespace/fast
+
+#=============================================================================
 # Target rules for targets named overload
 
 # Build rule for target.
@@ -291,6 +304,19 @@ configfile: cmake_check_build_system
 configfile/fast:
 	$(MAKE) -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/build
 .PHONY : configfile/fast
+
+#=============================================================================
+# Target rules for targets named thread
+
+# Build rule for target.
+thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thread
+.PHONY : thread
+
+# fast build rule for target.
+thread/fast:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
+.PHONY : thread/fast
 
 #=============================================================================
 # Target rules for targets named encry
@@ -451,6 +477,33 @@ C++/Scattered/inherit.s: C++/Scattered/inherit.cpp.s
 C++/Scattered/inherit.cpp.s:
 	$(MAKE) -f CMakeFiles/inherit.dir/build.make CMakeFiles/inherit.dir/C++/Scattered/inherit.cpp.s
 .PHONY : C++/Scattered/inherit.cpp.s
+
+C++/Scattered/namespace_demo.o: C++/Scattered/namespace_demo.cpp.o
+
+.PHONY : C++/Scattered/namespace_demo.o
+
+# target to build an object file
+C++/Scattered/namespace_demo.cpp.o:
+	$(MAKE) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/C++/Scattered/namespace_demo.cpp.o
+.PHONY : C++/Scattered/namespace_demo.cpp.o
+
+C++/Scattered/namespace_demo.i: C++/Scattered/namespace_demo.cpp.i
+
+.PHONY : C++/Scattered/namespace_demo.i
+
+# target to preprocess a source file
+C++/Scattered/namespace_demo.cpp.i:
+	$(MAKE) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/C++/Scattered/namespace_demo.cpp.i
+.PHONY : C++/Scattered/namespace_demo.cpp.i
+
+C++/Scattered/namespace_demo.s: C++/Scattered/namespace_demo.cpp.s
+
+.PHONY : C++/Scattered/namespace_demo.s
+
+# target to generate assembly for a file
+C++/Scattered/namespace_demo.cpp.s:
+	$(MAKE) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/C++/Scattered/namespace_demo.cpp.s
+.PHONY : C++/Scattered/namespace_demo.cpp.s
 
 C++/Scattered/variableParam.o: C++/Scattered/variableParam.cpp.o
 
@@ -776,6 +829,33 @@ pointer_arr.c.s:
 	$(MAKE) -f CMakeFiles/posarr.dir/build.make CMakeFiles/posarr.dir/pointer_arr.c.s
 .PHONY : pointer_arr.c.s
 
+thread/pthread.o: thread/pthread.c.o
+
+.PHONY : thread/pthread.o
+
+# target to build an object file
+thread/pthread.c.o:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/thread/pthread.c.o
+.PHONY : thread/pthread.c.o
+
+thread/pthread.i: thread/pthread.c.i
+
+.PHONY : thread/pthread.i
+
+# target to preprocess a source file
+thread/pthread.c.i:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/thread/pthread.c.i
+.PHONY : thread/pthread.c.i
+
+thread/pthread.s: thread/pthread.c.s
+
+.PHONY : thread/pthread.s
+
+# target to generate assembly for a file
+thread/pthread.c.s:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/thread/pthread.c.s
+.PHONY : thread/pthread.c.s
+
 二级指针函数输出.o: 二级指针函数输出.c.o
 
 .PHONY : 二级指针函数输出.o
@@ -901,11 +981,13 @@ help:
 	@echo "... posoperatefile"
 	@echo "... dynamicalloc"
 	@echo "... bubble"
+	@echo "... namespace"
 	@echo "... overload"
 	@echo "... posarr"
 	@echo "... variablepar"
 	@echo "... multi2"
 	@echo "... configfile"
+	@echo "... thread"
 	@echo "... encry"
 	@echo "... leakmem"
 	@echo "... main"
@@ -922,6 +1004,9 @@ help:
 	@echo "... C++/Scattered/inherit.o"
 	@echo "... C++/Scattered/inherit.i"
 	@echo "... C++/Scattered/inherit.s"
+	@echo "... C++/Scattered/namespace_demo.o"
+	@echo "... C++/Scattered/namespace_demo.i"
+	@echo "... C++/Scattered/namespace_demo.s"
 	@echo "... C++/Scattered/variableParam.o"
 	@echo "... C++/Scattered/variableParam.i"
 	@echo "... C++/Scattered/variableParam.s"
@@ -958,6 +1043,9 @@ help:
 	@echo "... pointer_arr.o"
 	@echo "... pointer_arr.i"
 	@echo "... pointer_arr.s"
+	@echo "... thread/pthread.o"
+	@echo "... thread/pthread.i"
+	@echo "... thread/pthread.s"
 	@echo "... 二级指针函数输出.o"
 	@echo "... 二级指针函数输出.i"
 	@echo "... 二级指针函数输出.s"
