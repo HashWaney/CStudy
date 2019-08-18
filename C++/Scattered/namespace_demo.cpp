@@ -33,10 +33,18 @@ int main()
     {
         int *p =&a;
         *p =12;
-        printf("a %d \n",a);
+        printf("a:%d , b:%d \n",a,b);// a 12 b 12
     }
-    b=14;
-    printf("a:%d b:%d\n",a,b);
+
+    int c =144;
+    a=c;
+    int *pInt=&a;
+    printf("&a value :%d, &a address:%p\n",*(&a),&a);//144
+
+    b=*pInt;
+
+    printf("a:%d b:%d,pInt:%p\n",a,b,pInt);// a 144 b 144
+
 }
 
 
