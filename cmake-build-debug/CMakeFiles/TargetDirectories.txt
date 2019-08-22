@@ -4,6 +4,7 @@
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/multi.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/operatefile.dir
+/Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/template.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/pointer_value.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/memalloc.dir
 /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug/CMakeFiles/posoperatefile.dir

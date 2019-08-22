@@ -163,6 +163,19 @@ operatefile/fast:
 .PHONY : operatefile/fast
 
 #=============================================================================
+# Target rules for targets named template
+
+# Build rule for target.
+template: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 template
+.PHONY : template
+
+# fast build rule for target.
+template/fast:
+	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/build
+.PHONY : template/fast
+
+#=============================================================================
 # Target rules for targets named pointer_value
 
 # Build rule for target.
@@ -558,6 +571,33 @@ C++/overload/FunctionOverloading.s: C++/overload/FunctionOverloading.cpp.s
 C++/overload/FunctionOverloading.cpp.s:
 	$(MAKE) -f CMakeFiles/overload.dir/build.make CMakeFiles/overload.dir/C++/overload/FunctionOverloading.cpp.s
 .PHONY : C++/overload/FunctionOverloading.cpp.s
+
+C++/template/template.o: C++/template/template.cpp.o
+
+.PHONY : C++/template/template.o
+
+# target to build an object file
+C++/template/template.cpp.o:
+	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/C++/template/template.cpp.o
+.PHONY : C++/template/template.cpp.o
+
+C++/template/template.i: C++/template/template.cpp.i
+
+.PHONY : C++/template/template.i
+
+# target to preprocess a source file
+C++/template/template.cpp.i:
+	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/C++/template/template.cpp.i
+.PHONY : C++/template/template.cpp.i
+
+C++/template/template.s: C++/template/template.cpp.s
+
+.PHONY : C++/template/template.s
+
+# target to generate assembly for a file
+C++/template/template.cpp.s:
+	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/C++/template/template.cpp.s
+.PHONY : C++/template/template.cpp.s
 
 bubble.o: bubble.cpp.o
 
@@ -976,6 +1016,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... multi"
 	@echo "... operatefile"
+	@echo "... template"
 	@echo "... pointer_value"
 	@echo "... memalloc"
 	@echo "... posoperatefile"
@@ -1013,6 +1054,9 @@ help:
 	@echo "... C++/overload/FunctionOverloading.o"
 	@echo "... C++/overload/FunctionOverloading.i"
 	@echo "... C++/overload/FunctionOverloading.s"
+	@echo "... C++/template/template.o"
+	@echo "... C++/template/template.i"
+	@echo "... C++/template/template.s"
 	@echo "... bubble.o"
 	@echo "... bubble.i"
 	@echo "... bubble.s"

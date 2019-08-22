@@ -53,6 +53,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/inherit.dir/DependInfo.cmake"
   "CMakeFiles/multi.dir/DependInfo.cmake"
   "CMakeFiles/operatefile.dir/DependInfo.cmake"
+  "CMakeFiles/template.dir/DependInfo.cmake"
   "CMakeFiles/pointer_value.dir/DependInfo.cmake"
   "CMakeFiles/memalloc.dir/DependInfo.cmake"
   "CMakeFiles/posoperatefile.dir/DependInfo.cmake"
