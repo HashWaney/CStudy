@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/wangqing/Desktop/C:C++/Demo/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -163,6 +163,19 @@ operatefile/fast:
 .PHONY : operatefile/fast
 
 #=============================================================================
+# Target rules for targets named memalloc
+
+# Build rule for target.
+memalloc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 memalloc
+.PHONY : memalloc
+
+# fast build rule for target.
+memalloc/fast:
+	$(MAKE) -f CMakeFiles/memalloc.dir/build.make CMakeFiles/memalloc.dir/build
+.PHONY : memalloc/fast
+
+#=============================================================================
 # Target rules for targets named template
 
 # Build rule for target.
@@ -174,6 +187,19 @@ template: cmake_check_build_system
 template/fast:
 	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/build
 .PHONY : template/fast
+
+#=============================================================================
+# Target rules for targets named overload
+
+# Build rule for target.
+overload: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 overload
+.PHONY : overload
+
+# fast build rule for target.
+overload/fast:
+	$(MAKE) -f CMakeFiles/overload.dir/build.make CMakeFiles/overload.dir/build
+.PHONY : overload/fast
 
 #=============================================================================
 # Target rules for targets named pointer_value
@@ -189,19 +215,6 @@ pointer_value/fast:
 .PHONY : pointer_value/fast
 
 #=============================================================================
-# Target rules for targets named memalloc
-
-# Build rule for target.
-memalloc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 memalloc
-.PHONY : memalloc
-
-# fast build rule for target.
-memalloc/fast:
-	$(MAKE) -f CMakeFiles/memalloc.dir/build.make CMakeFiles/memalloc.dir/build
-.PHONY : memalloc/fast
-
-#=============================================================================
 # Target rules for targets named posoperatefile
 
 # Build rule for target.
@@ -215,6 +228,19 @@ posoperatefile/fast:
 .PHONY : posoperatefile/fast
 
 #=============================================================================
+# Target rules for targets named container
+
+# Build rule for target.
+container: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 container
+.PHONY : container
+
+# fast build rule for target.
+container/fast:
+	$(MAKE) -f CMakeFiles/container.dir/build.make CMakeFiles/container.dir/build
+.PHONY : container/fast
+
+#=============================================================================
 # Target rules for targets named dynamicalloc
 
 # Build rule for target.
@@ -226,6 +252,19 @@ dynamicalloc: cmake_check_build_system
 dynamicalloc/fast:
 	$(MAKE) -f CMakeFiles/dynamicalloc.dir/build.make CMakeFiles/dynamicalloc.dir/build
 .PHONY : dynamicalloc/fast
+
+#=============================================================================
+# Target rules for targets named variablepar
+
+# Build rule for target.
+variablepar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 variablepar
+.PHONY : variablepar
+
+# fast build rule for target.
+variablepar/fast:
+	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/build
+.PHONY : variablepar/fast
 
 #=============================================================================
 # Target rules for targets named bubble
@@ -254,19 +293,6 @@ namespace/fast:
 .PHONY : namespace/fast
 
 #=============================================================================
-# Target rules for targets named overload
-
-# Build rule for target.
-overload: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 overload
-.PHONY : overload
-
-# fast build rule for target.
-overload/fast:
-	$(MAKE) -f CMakeFiles/overload.dir/build.make CMakeFiles/overload.dir/build
-.PHONY : overload/fast
-
-#=============================================================================
 # Target rules for targets named posarr
 
 # Build rule for target.
@@ -278,19 +304,6 @@ posarr: cmake_check_build_system
 posarr/fast:
 	$(MAKE) -f CMakeFiles/posarr.dir/build.make CMakeFiles/posarr.dir/build
 .PHONY : posarr/fast
-
-#=============================================================================
-# Target rules for targets named variablepar
-
-# Build rule for target.
-variablepar: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 variablepar
-.PHONY : variablepar
-
-# fast build rule for target.
-variablepar/fast:
-	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/build
-.PHONY : variablepar/fast
 
 #=============================================================================
 # Target rules for targets named multi2
@@ -544,6 +557,33 @@ C++/Scattered/variableParam.s: C++/Scattered/variableParam.cpp.s
 C++/Scattered/variableParam.cpp.s:
 	$(MAKE) -f CMakeFiles/variablepar.dir/build.make CMakeFiles/variablepar.dir/C++/Scattered/variableParam.cpp.s
 .PHONY : C++/Scattered/variableParam.cpp.s
+
+C++/collection/Container.o: C++/collection/Container.cpp.o
+
+.PHONY : C++/collection/Container.o
+
+# target to build an object file
+C++/collection/Container.cpp.o:
+	$(MAKE) -f CMakeFiles/container.dir/build.make CMakeFiles/container.dir/C++/collection/Container.cpp.o
+.PHONY : C++/collection/Container.cpp.o
+
+C++/collection/Container.i: C++/collection/Container.cpp.i
+
+.PHONY : C++/collection/Container.i
+
+# target to preprocess a source file
+C++/collection/Container.cpp.i:
+	$(MAKE) -f CMakeFiles/container.dir/build.make CMakeFiles/container.dir/C++/collection/Container.cpp.i
+.PHONY : C++/collection/Container.cpp.i
+
+C++/collection/Container.s: C++/collection/Container.cpp.s
+
+.PHONY : C++/collection/Container.s
+
+# target to generate assembly for a file
+C++/collection/Container.cpp.s:
+	$(MAKE) -f CMakeFiles/container.dir/build.make CMakeFiles/container.dir/C++/collection/Container.cpp.s
+.PHONY : C++/collection/Container.cpp.s
 
 C++/overload/FunctionOverloading.o: C++/overload/FunctionOverloading.cpp.o
 
@@ -1010,22 +1050,23 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... func"
 	@echo "... inherit"
-	@echo "... rebuild_cache"
 	@echo "... multi"
 	@echo "... operatefile"
-	@echo "... template"
-	@echo "... pointer_value"
 	@echo "... memalloc"
+	@echo "... template"
+	@echo "... overload"
+	@echo "... pointer_value"
 	@echo "... posoperatefile"
+	@echo "... container"
 	@echo "... dynamicalloc"
+	@echo "... variablepar"
 	@echo "... bubble"
 	@echo "... namespace"
-	@echo "... overload"
 	@echo "... posarr"
-	@echo "... variablepar"
 	@echo "... multi2"
 	@echo "... configfile"
 	@echo "... thread"
@@ -1051,6 +1092,9 @@ help:
 	@echo "... C++/Scattered/variableParam.o"
 	@echo "... C++/Scattered/variableParam.i"
 	@echo "... C++/Scattered/variableParam.s"
+	@echo "... C++/collection/Container.o"
+	@echo "... C++/collection/Container.i"
+	@echo "... C++/collection/Container.s"
 	@echo "... C++/overload/FunctionOverloading.o"
 	@echo "... C++/overload/FunctionOverloading.i"
 	@echo "... C++/overload/FunctionOverloading.s"
